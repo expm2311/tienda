@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, "Courier New", Courier, monospace;
+  font-size: 15px;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  overflow-x: hidden;
+  padding-left: 50px;
+  padding-top: 50px;
+  background: #ffffff;
+}
+
+.nav-left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  padding: 80px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-left .cuentas-premium {
+  background: #e8edf0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin-top: 15px;
+}
+.nav-left .cuentas-premium:hover {
+  background: #018af8;
+}
+.nav-left .cuentas-premium:hover .cuentas, .nav-left .cuentas-premium:hover .shop {
+  fill: #ffffff;
+}
+.nav-left .cuentas-premium .cuentas {
+  position: absolute;
+  top: 8.5px;
+  left: 13px;
+  width: 20px;
+}
+.nav-left .cuentas-premium .shop {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  width: 25px;
+}
+
+.nav-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 0px 10px 0 110px;
+}
+.nav-top .logo {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  display: flex;
+  align-items: center;
+}
+.nav-top .logo .logo-svg {
+  width: 30px;
+  fill: #018af8;
+}
+.nav-top .logo .text_info {
+  font-size: 1.5em;
+}
+.nav-top .ul {
+  margin: 0 auto;
+  display: flex;
+}
+.nav-top .ul li {
+  list-style-type: none;
+  margin: 0 15px;
+}
+.nav-top .ul li a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+.nav-top .ul li a:hover {
+  color: #018af8;
+}
+.nav-top .ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #018af8;
+  transition: width 0.3s ease-in-out;
+}
+.nav-top .ul li a:hover::before {
+  width: 100%;
+}
+.nav-top .search {
+  display: flex;
+}
+.nav-top .search .input-search {
+  outline: none;
+  border: 1px solid rgb(205, 205, 205);
+  border-radius: 10px;
+  background: #e8edf0;
+  padding: 5px 10px;
+  margin-right: -15px;
+}
+.nav-top .search .lupa {
+  width: 30px;
+  background: #d13eb7;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+}
+.nav-top .search .lupa .lupa-img {
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 0 0 0;
+}
+
+@media (max-width: 700px) {
+  .nav-top {
+    display: flex;
+    justify-content: center;
+    padding: 0px 10px 0 10px;
+  }
+  .nav-top .logo {
+    position: relative;
+    margin: -15px 0 0 -10px;
+  }
+  .nav-top .ul {
+    display: flex;
+    justify-content: end;
+  }
+  .nav-top .ul li {
+    margin: 0 5px;
+  }
+  .nav-top .search .input-search {
+    width: 100px;
+  }
+}/*# sourceMappingURL=style.css.map */

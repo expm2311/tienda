@@ -1,0 +1,15 @@
+* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, "Courier New", Courier, monospace;
+  font-size: 15px;
+}
+* body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  display: grid;
+  background: #e8edf0;
+}/*# sourceMappingURL=cuentas.css.map */

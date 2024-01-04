@@ -1,0 +1,23 @@
+*{
+        // Colores
+$fondo-claro: #ffffff;
+$fondo-gris: #e8edf0;
+$fondo-azul: #d13eb7;
+$fondo-oscuro: #16151b;
+
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva,'Courier New', Courier, monospace;
+        font-size: 15px;
+}
+body{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        box-sizing: border-box;
+        display: grid;
+        background: $fondo-gris;
+}
+}
